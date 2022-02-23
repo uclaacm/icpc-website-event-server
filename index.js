@@ -77,7 +77,7 @@ app.post('/delete', (req, res) => {
 });
 })
 
-http.createServer(app).listen(4000, () => {
+http.createServer(app).listen(process.env.PORT || 4000, () => {
   console.log(`Example app listening on port ${port}`)
 });
 
